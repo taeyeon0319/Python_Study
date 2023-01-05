@@ -104,7 +104,7 @@
     a.count(3) #2
     a.remove(1) #[2, 3, 3, 4]
     ```
-    -> reverse, insert, remove는 시간복잡도가 O(N)으로 오래 걸림
+    -> reverse, insert, remove는 시간복잡도가 O(N)으로 오래 걸림   
     -> 아래와 같은 방식을 이용할 것
     ```python
     a = [1, 2, 3, 4, 5, 5, 5]
