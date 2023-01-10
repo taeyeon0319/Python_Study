@@ -280,9 +280,65 @@
 - continue : 반복문의 처음으로 돌아감   
 - break : 반복문을 나옴
 
+<br><br>
+
+
+## 04. 함수
+---
+- 동일한 알고리즘을 반복적으로 수행해야할 때 사용   
+- 매개변수 : 변수의 값을 전달받음   
+- return : 어떠한 값을 반환받음   
+- 함수에서 매개변수/return이 존재하지 않을 수도 있다. 
+
+    ```python
+    def 함수명(매개변수):
+        실행할 소스코드
+        return 반환 값
+    ```
+    <br>
+    - 기본 함수 틀   
+    ```python
+    def add(a, b):
+        return a+b
+    
+    print(add(3, 7))
+    ```
+    <br>
+    - return문 없이  
+    ```python
+    def add(a, b):
+        print(a+b)
+    
+    add(3, 7)
+    ```
+    <br>
+    - 매개변수 순서 변경가능 
+    ```python
+    def add(a, b):
+        print(a+b)
+    
+    add(b = 3, a = 7)
+    ```
+    <br>
+    - 함수 밖의 변수 데이터 변경해야 할 때 : global키워드 이용
+    ```python
+    a = 0
+    def func():
+        global a
+        a+=1
+    for i in range(10):
+        func()
+    print(a) #a가 10이 되어 데이터값이 변함
+    ```
+    <br>
+    - 람다(lambda) 표현식   
+        - 함수를 매우 간단하게 작성 가능   
+        - 파이썬의 정렬 라이브러리 사용할 때 / 정렬 기준(Key)을 설정할 때 자주 사용
+    ```python
+    print((lambda a, b: a + b)(3, 7))
+    ```
+
         
-
-
 
 
 ---
