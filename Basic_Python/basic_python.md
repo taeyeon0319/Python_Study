@@ -344,7 +344,52 @@
     print((lambda a, b: a + b)(3, 7))
     ```
 
-        
+<br><br>
+
+## 05. 입출력
+---
+### 입력
+
+- input() : 데이터 입력받을 때   
+- int() : 입력 데이터를 정수로 바꿈   
+- input().split() : 공백을 기준으로 나눔   
+- map(int, input().split()) : 공백을 기준으로 나눈 모든 원소에 int()함수를 적용함   
+- list(map(int, input().split())) : map까지 적용된 모든 원소들을 띄어쓰기로 구준하여 각각 숫자 자료형으로 저장
+
+    ```python
+    data = list(map(int, input().split())) #입력받은 데이터를 공백으로 구분
+    data.sort(reverse=True) #리스트를 정렬함
+    ```   
+
+- 입력의 개수가 많은 경우 input()함수보다는 sys 라이브러리를 사용한다.   
+- sys.stdin.readline()   
+
+    ```python
+    import sys
+    sys.stdin.readline().rstrip() 
+    ```   
+
+- 꼭 rstrip()함수 호출할 것!   
+- readline()만 쓰면 줄 바꿈을 위한 엔터가 문자열로 인식되기 때문
+
+### 출력
+- print() : 변수나 상수를 매개변수로 입력받아 출력, 콤마(,) 구분함 
+
+    ```python
+    a = 1
+    b = 2
+    print(a, b) #줄 바꿈 없이 띄어쓰기로 구분되어 출력
+    
+    print(a)
+    print(b) #줄 바꿈으로 출력됨
+    ```
+    ```python
+    a = 1
+    print("숫자 a는 "+str(a)+"이다.") #변수를 문자열로 바꾸어 출력
+    print("숫자 a는 ", str(a), "이다.") #의도치 않는 공백이 삽입될 수 있다
+    print(f"숫자 a는 {a}이다.") #자료형 변환없이도 출력가능(f-string)
+    ```   
+
 
 
 ---
