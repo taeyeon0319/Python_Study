@@ -296,7 +296,8 @@
         return 반환 값
     ```   
     <br>
-    - 기본 함수 틀      
+    - 기본 함수 틀   
+    
     ```python
     def add(a, b):
         return a+b
