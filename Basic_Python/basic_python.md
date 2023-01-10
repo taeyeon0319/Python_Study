@@ -252,7 +252,34 @@
     - X in 리스트/문자열 : 리스트/문자열 안에 X가 들어가 있음 
     - X not in 리스트/문자열 : 리스트/문자열 안에 X가 들어가 있지 않음
 
+<br><br>
+
+
+## 03. 반복문
+
+---
+### while문
+- 조건문이 참일 때 반복적으로 코드 수행
+    ```python
+    i = 1
+    result = 0
+    while i <= 9:
+        result += i
+        i += 1
+    ```
+
+### for문
+- in 뒤에 리스트, 튜플, 문자열 등이 사용될 수 있음
+    ```python
+    result = 0
     
+    for i in range(1, 10):
+        result += i
+   ```
+   - range()에 하나의 값을 넣으면 시작 값은 0   
+- continue : 반복문의 처음으로 돌아감   
+- break : 반복문을 나옴
+
         
 
 
