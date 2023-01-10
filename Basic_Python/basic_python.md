@@ -297,7 +297,7 @@
     ```   
     <br>
     - 기본 함수 틀   
-    
+
     ```python
     def add(a, b):
         return a+b
@@ -305,7 +305,8 @@
     print(add(3, 7))
     ```
     <br>   
-    - return문 없이     
+    - return문 없이   
+
     ```python
     def add(a, b):
         print(a+b)
@@ -313,7 +314,8 @@
     add(3, 7)
     ```
     <br>
-    - 매개변수 순서 변경가능 
+    - 매개변수 순서 변경가능    
+
     ```python
     def add(a, b):
         print(a+b)
@@ -321,7 +323,8 @@
     add(b = 3, a = 7)
     ```
     <br>
-    - 함수 밖의 변수 데이터 변경해야 할 때 : global키워드 이용
+    - 함수 밖의 변수 데이터 변경해야 할 때 : global키워드 이용   
+
     ```python
     a = 0
     def func():
@@ -333,8 +336,9 @@
     ```
     <br>
     - 람다(lambda) 표현식   
-        - 함수를 매우 간단하게 작성 가능   
-        - 파이썬의 정렬 라이브러리 사용할 때 / 정렬 기준(Key)을 설정할 때 자주 사용
+        - 함수를 매우 간단하게 작성 가능      
+        - 파이썬의 정렬 라이브러리 사용할 때 / 정렬 기준(Key)을 설정할 때 자주 사용   
+        
     ```python
     print((lambda a, b: a + b)(3, 7))
     ```
