@@ -294,17 +294,17 @@
     def 함수명(매개변수):
         실행할 소스코드
         return 반환 값
-    ```
+    ```   
     <br>
-    - 기본 함수 틀   
+    - 기본 함수 틀      
     ```python
     def add(a, b):
         return a+b
     
     print(add(3, 7))
     ```
-    <br>
-    - return문 없이  
+    <br>   
+    - return문 없이     
     ```python
     def add(a, b):
         print(a+b)
